@@ -1,0 +1,22 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="dialog_title">إضافة أسهم</string>
+    <string name="dialog_hint">الرمز (على سبيل المثال GOOG)</string>
+    <string name="dialog_cancel">إلغاء</string>
+    <string name="dialog_add">إضافة</string>
+
+    <string name="error_no_network">أي شبكة اتصال! سيتم تحميل المؤشر الأسهم عندما تتوفر الشبكة.</string>
+    <string name="error_no_stocks">وأضافت يوجد مخزون! اضغط على زر عمل العائمة لإضافة واحد.</string>
+
+    <string name="toast_stock_added_no_connectivity">رمز  %s وأضاف. سيتم تحديث عندما الشبكة المتوفرة.</string>
+    <string name="toast_no_connectivity">سيتم تحديث عندما شبكة المتاحة.</string>
+
+    <string name="empty_history_list">No History Information Available</string>
+
+    <!-- A11y -->
+    <string name="main_fav_content">إضافة أسهم</string>
+    <string name="a11y_symbol">رمز: <xliff:g id="symbol">%1$s</xliff:g></string>
+    <string name="a11y_price">السعر: <xliff:g id="price">%1$s</xliff:g></string>
+    <string name="a11y_change">يتغيرون: <xliff:g id="change">%1$s</xliff:g></string>
+    <string name="a11y_percentage">النسبة المئوية: <xliff:g id="percentage">%1$s</xliff:g></string>
+
+</resources>

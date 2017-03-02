@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
     <string name="app_name">Stock Hawk</string>
 
     <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
@@ -31,5 +31,15 @@
 
     <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
     <string name="toast_no_connectivity">Will refresh when network available.</string>
+
+    <string name="empty_history_list">No History Information Available</string>
+
+    <!-- A11y -->
+    <string name="main_fav_content">Add Stock</string>
+    <string name="a11y_symbol">Symbol: <xliff:g id="symbol">%1$s</xliff:g></string>
+    <string name="a11y_price">Price: <xliff:g id="price">%1$s</xliff:g></string>
+    <string name="a11y_change">Change: <xliff:g id="change">%1$s</xliff:g></string>
+    <string name="a11y_percentage">Percentage: <xliff:g id="percentage">%1$s</xliff:g></string>
+    <string name="title_activity_detail">DetailActivity</string>
 
 </resources>
