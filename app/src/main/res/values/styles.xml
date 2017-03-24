@@ -20,4 +20,12 @@
         <item name="android:textSize">25sp</item>
         <item name="android:textAllCaps">true</item>
     </style>
+
+    <style name="HistoryTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/ActionBar.Solid</item>
+    </style>
+
+    <style name="ActionBar.Solid" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="displayOptions">showHome|showTitle</item>
+    </style>
 </resources>

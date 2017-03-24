@@ -8,6 +8,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -28,7 +30,7 @@ import butterknife.ButterKnife;
 
 import static com.github.mikephil.charting.charts.Chart.LOG_TAG;
 
-public class DetailActivity extends Activity implements LoaderManager.LoaderCallbacks<Cursor> {
+public class DetailActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
     @SuppressWarnings("WeakerAccess")
     @BindView(R.id.recyclerview_history)
     RecyclerView mRecyclerView;
@@ -59,6 +61,9 @@ public class DetailActivity extends Activity implements LoaderManager.LoaderCall
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setElevation(0f);
+        getSupportActionBar().setTitle(getString(R.string.title_activity_detail));
+
         setContentView(R.layout.activity_detail);
         ButterKnife.bind(this);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -90,7 +95,7 @@ public class DetailActivity extends Activity implements LoaderManager.LoaderCall
             ArrayList<Pair<String, String>> lista = new ArrayList<>();
             for (String row : rows) {
                 String date = row.split(",")[0];
-                String price = row.split(",")[0];
+                String price = row.split(",")[1];
                 lista.add(new Pair<String, String>(date, price));
             }
             mHistoryAdapter.swapElements(lista);

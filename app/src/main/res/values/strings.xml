@@ -26,6 +26,8 @@
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_add">Add</string>
 
+    <string name="stock_not_exist">Stock does not exist.</string>
+
     <string name="error_no_network">No network connectivity! Will load stock cursor when the network is available.</string>
     <string name="error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
 
@@ -40,6 +42,10 @@
     <string name="a11y_price">Price: <xliff:g id="price">%1$s</xliff:g></string>
     <string name="a11y_change">Change: <xliff:g id="change">%1$s</xliff:g></string>
     <string name="a11y_percentage">Percentage: <xliff:g id="percentage">%1$s</xliff:g></string>
-    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_detail">History</string>
+
+
+    <string name="empty_quotes_list">No Quote Information Available</string>
+    <string name="title_widget_detail">Quotes</string>
 
 </resources>

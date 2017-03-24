@@ -41,12 +41,12 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryA
 
     public class HistoryAdapterViewHolder extends RecyclerView.ViewHolder{
         public final TextView mDateView;
-        public final TextView mPiceView;
+        public final TextView mPriceView;
 
         public HistoryAdapterViewHolder(View view) {
             super(view);
             mDateView = (TextView) view.findViewById(R.id.item_date);
-            mPiceView = (TextView) view.findViewById(R.id.item_price);
+            mPriceView = (TextView) view.findViewById(R.id.item_price);
         }
     }
 
@@ -69,12 +69,12 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryA
 
         // Get date from element
 
-        historyAdapterViewHolder.mDateView.setText(getDate(Long.getLong(date),"dd/MM/yyyy"));
+        historyAdapterViewHolder.mDateView.setText(getDate(Long.parseLong(date),"dd/MM/yyyy"));
         //historyAdapterViewHolder.mDateView.setContentDescription(mContext.getString(R.string.a11y_high_temp, highString));
 
         // Read low temperature from cursor
-        historyAdapterViewHolder.mPiceView.setText(dollarFormat.format(date));
-        //historyAdapterViewHolder.mPiceView.setContentDescription(mContext.getString(R.string.a11y_high_temp, highString));
+        historyAdapterViewHolder.mPriceView.setText(dollarFormat.format(Float.parseFloat(price)));
+        //historyAdapterViewHolder.mPriceView.setContentDescription(mContext.getString(R.string.a11y_high_temp, highString));
     }
 
     @Override
