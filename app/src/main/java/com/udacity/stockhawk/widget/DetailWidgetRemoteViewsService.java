@@ -112,6 +112,12 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
                     views.setTextViewText(R.id.widget_change, percentage);
                 }
 
+                if (rawAbsoluteChange > 0) {
+                    views.setInt(R.id.widget_change, "setBackgroundResource", R.drawable.percent_change_pill_green);
+                } else {
+                    views.setInt(R.id.widget_change, "setBackgroundResource", R.drawable.percent_change_pill_red);
+                }
+
                 final Intent fillInIntent = new Intent();
                 Uri uri = Contract.Quote.makeUriForStock(symbol);
                 fillInIntent.setData(uri);
