@@ -21,4 +21,6 @@
     <string name="a11y_change">يتغيرون: <xliff:g id="change">%1$s</xliff:g></string>
     <string name="a11y_percentage">النسبة المئوية: <xliff:g id="percentage">%1$s</xliff:g></string>
 
+    <string name="empty_quotes_list">No Quote Information Available</string>
+    <string name="title_widget_detail">Quotes</string>
 </resources>

@@ -3,7 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="background">#303030</color>
+    <color name="widget_text">#C1C1C1</color>
+    <color name="widget_title">#FFF</color>
 
     <color name="material_blue_500">#2196F3</color>
     <color name="material_red_700">#D50000</color>
